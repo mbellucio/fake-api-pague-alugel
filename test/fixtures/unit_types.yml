@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: 1
+  description: MyString
+  ideal_fraction: 1.5
+  condo_id: 1
+
+two:
+  area: 1
+  description: MyString
+  ideal_fraction: 1.5
+  condo_id: 1

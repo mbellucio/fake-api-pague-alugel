@@ -1,11 +1,15 @@
 class Api::V1::CondosController < Api::V1::ApiController
   def index
-    data = File.read(Rails.root.join('app/json/condos.json'))
-    render status: 200, json: data
+    data = Condo.all
+    render status: 200, json: data.as_json(except: [:created_at, :updated_at])
   end
 
   def show
-    data = File.read(Rails.root.join('app/json/condo.json'))
-    render status: 200, json: data
+    begin
+      data = Condo.find_by!(id: params[:id])
+      render status: 200, json: data.as_json(except: [:created_at, :updated_at])
+    rescue
+      return render status: 404
+    end
   end
 end
