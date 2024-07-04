@@ -1,16 +1,24 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
-
-Condo.create!(name: 'Sai de Baixo', city: 'Rio de Janeiro')
-Condo.create!(name: 'Sai de Cima', city: 'Sao Paulo')
-Condo.create!(name: 'Sai do Meio', city: 'Minas Gerais')
+Condo.create!(name: 'Residencial Vista Alegre', city: 'São Paulo')
+Condo.create!(name: 'Condomínio Monte Belo', city: 'Rio de Janeiro')
+Condo.create!(name: 'Residencial Parque Verde', city: 'Belo Horizonte')
+Condo.create!(name: 'Condomínio Jardim das Flores', city: 'Curitiba')
+Condo.create!(name: 'Residencial Bela Vista', city: 'Porto Alegre')
+Condo.create!(name: 'Condomínio Solar do Campo', city: 'Brasília')
+Condo.create!(name: 'Residencial Porto Seguro', city: 'Salvador')
+Condo.create!(name: 'Condomínio Bosque Encantado', city: 'Fortaleza')
+Condo.create!(name: 'Residencial Estrela do Sul', city: 'Manaus')
+Condo.create!(name: 'Condomínio Vale do Sol', city: 'Recife')
+Condo.create!(name: 'Residencial Nova Esperança', city: 'Goiânia')
+Condo.create!(name: 'Condomínio Recanto Feliz', city: 'Belém')
+Condo.create!(name: 'Residencial Jardim Imperial', city: 'Campinas')
+Condo.create!(name: 'Condomínio Vila das Árvores', city: 'São Luís')
+Condo.create!(name: 'Residencial Paraíso', city: 'Maceió')
+Condo.create!(name: 'Condomínio Terra Nova', city: 'Natal')
+Condo.create!(name: 'Residencial Estância Real', city: 'Teresina')
+Condo.create!(name: 'Condomínio Monte Verde', city: 'João Pessoa')
+Condo.create!(name: 'Residencial Sol Nascente', city: 'Aracaju')
+Condo.create!(name: 'Condomínio Bela Jardins', city: 'Campo Grande')
+Condo.create!(name: 'Edificios Centro Universitario Filadelfia', city: 'Londrina')
 
 UnitType.create!(area: 1000, description: 'Something', ideal_fraction: 0.1, condo_id: 1)
 UnitType.create!(area: 2000, description: 'Another Thing', ideal_fraction: 0.2, condo_id: 1)
