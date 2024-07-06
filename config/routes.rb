@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :condos, only: [:index, :show]
       resources :unit_types, only: [:index, :show]
       resources :units, only: [:index, :show]
+      resources :common_areas, only: [:index, :show]
     end
   end
 end
