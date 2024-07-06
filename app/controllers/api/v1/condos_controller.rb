@@ -5,11 +5,11 @@ class Api::V1::CondosController < Api::V1::ApiController
   end
 
   def show
-    begin
-      data = Condo.find_by!(id: params[:id])
-      render status: 200, json: data.as_json(except: [:created_at, :updated_at])
-    rescue
-      return render status: 404
-    end
+    data = Condo.find(params[:id])
+    render status: 200, json: data.as_json(except: [:created_at, :updated_at])
+  rescue ActiveRecord::RecordNotFound
+    render status: 404
+  rescue StandardError
+    render status: 500
   end
 end
