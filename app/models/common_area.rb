@@ -1,0 +1,2 @@
+class CommonArea < ApplicationRecord
+end
