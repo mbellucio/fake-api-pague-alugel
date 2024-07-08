@@ -26,6 +26,9 @@ Condo.create!(name: 'Edificios Centro Universitario Filadelfia', city: 'Londrina
 
 p "#{Condo.count} Condo created"
 
+UnitType.create!(area: 1000, description: 'Kitnet', ideal_fraction: 0.1, condo_id: 20)
+UnitType.create!(area: 2000, description: 'Quarto e Sala', ideal_fraction: 0.2, condo_id: 20)
+UnitType.create!(area: 3000, description: 'Apartamento de 2 Quartos', ideal_fraction: 0.3, condo_id: 20)
 UnitType.create!(area: 1000, description: 'Apartamentinho', ideal_fraction: 0.1, condo_id: 1)
 UnitType.create!(area: 2000, description: 'Apartamento', ideal_fraction: 0.2, condo_id: 1)
 UnitType.create!(area: 3000, description: 'Apartamentão', ideal_fraction: 0.3, condo_id: 1)
@@ -40,8 +43,12 @@ UnitType.create!(area: 4000, description: 'Apartamento de Ouro', ideal_fraction:
 p "#{UnitType.count} UnitType created"
 
 Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 1)
-Unit.create!(area: 200, floor: 2, number: 2, unit_type_id: 1)
-Unit.create!(area: 300, floor: 3, number: 3, unit_type_id: 1)
+Unit.create!(area: 200, floor: 1, number: 2, unit_type_id: 2)
+Unit.create!(area: 300, floor: 1, number: 3, unit_type_id: 3)
+
+Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 4)
+Unit.create!(area: 200, floor: 2, number: 2, unit_type_id: 4)
+Unit.create!(area: 300, floor: 3, number: 3, unit_type_id: 4)
 
 p "#{Unit.count} Unit created"
 
