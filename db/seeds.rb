@@ -1,6 +1,6 @@
-PropertyOwner.create!(email: 'raphael@email.com',   password: 'raphael123',   document_id: '12312312301')
-PropertyOwner.create!(email: 'leonardo@email.com',  password: 'leonardo123',  document_id: '12312312302')
-PropertyOwner.create!(email: 'donatello@email.com', password: 'donatello123', document_id: '12312312303')
+PropertyOwner.create!(document_number: '12312312301')
+PropertyOwner.create!(document_number: '12312312302')
+PropertyOwner.create!(document_number: '12312312303')
 
 Condo.create!(name: 'Residencial Vista Alegre', city: 'São Paulo')
 Condo.create!(name: 'Condomínio Monte Belo', city: 'Rio de Janeiro')
