@@ -78,9 +78,9 @@ CommonArea.create!(name: 'Salão de Festa - Monte Belo', description: 'Salão pr
 CommonArea.create!(name: 'Salão de jogos - Monte Belo', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 2)
 CommonArea.create!(name: 'Jardim Botânico Interno - Monte Belo', description: 'Hambiente relaxante',
-                   max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 1)
+                   max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 2)
 CommonArea.create!(name: 'Playground - Monte Belo', description: 'Habiente para toda família',
-                   max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 1)
+                   max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 2)
 
 # Minas Gerais
 CommonArea.create!(name: 'Piscina - Parque Verde', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
@@ -93,9 +93,9 @@ CommonArea.create!(name: 'Salão de Festa - Parque Verde', description: 'Salão 
 CommonArea.create!(name: 'Salão de jogos - Parque Verde', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 3)
 CommonArea.create!(name: 'Jardim Botânico Interno - Parque Verde', description: 'Hambiente relaxante',
-                   max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 1)
+                   max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 3)
 CommonArea.create!(name: 'Playground - Parque Verde', description: 'Habiente para toda família',
-                   max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 1)
+                   max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 3)
 
 # Curitiba
 CommonArea.create!(name: 'Piscina - Jardim das Flores', description: 'Piscina grande cabe até golfinhos',
