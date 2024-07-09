@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Common Area' do
+describe 'Common Area API' do
   describe 'GET /api/v1/condos/:condo_id/common_areas/' do
     it 'successfully' do
       condo = Condo.create!(name: 'Residencial Vista Alegre', city: 'São Paulo')
@@ -30,6 +30,28 @@ describe 'Common Area' do
 
       expect(response.status).to eq 200
       expect(response.body).to eq '[]'
+    end
+
+    it 'sends only those from the requested condo' do
+      condo = Condo.create!(name: 'Residencial Vista Alegre', city: 'São Paulo')
+      Condo.create!(name: 'Condomínio Monte Belo', city: 'Rio de Janeiro')
+
+      CommonArea.create!(name: 'Piscina - Vista Alegre', description: 'Piscina grande cabe até golfinhos',
+                         max_occupancy: 50, rules: 'Não pode comer na área da piscina', condo_id: 1)
+      CommonArea.create!(name: 'Academia - Vista Alegre',
+                         description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
+                         rules: 'Não pode ser frango', condo_id: 2)
+      CommonArea.create!(name: 'Salão de Festa - Vista Alegre', description: 'Salão preparado para grandes festas',
+                         max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 1)
+
+      get "/api/v1/condos/#{condo.id}/common_areas"
+
+      expect(response.status).to eq 200
+      json_response = JSON.parse(response.body)
+      expect(json_response.length).to eq 2
+      expect(json_response[0]['name']).to eq 'Piscina - Vista Alegre'
+      expect(json_response[1]['name']).to eq 'Salão de Festa - Vista Alegre'
+      expect(json_response).not_to eq 'Academia - Vista Alegre'
     end
   end
 

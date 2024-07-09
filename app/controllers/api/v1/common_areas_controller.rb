@@ -1,6 +1,6 @@
 class Api::V1::CommonAreasController < Api::V1::ApiController
   def index
-    data = CommonArea.all
+    data = CommonArea.where(condo_id: params[:condo_id])
     render status: 200, json: data.as_json(except: %i[created_at updated_at])
   end
 
