@@ -53,93 +53,93 @@ Unit.create!(area: 300, floor: 3, number: 3, unit_type_id: 4)
 p "#{Unit.count} Unit created"
 
 # São Paulo
-CommonArea.create!(name: 'Piscina - Vista Alegre', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
                    rules: 'Não pode comer na área da piscina', condo_id: 1)
-CommonArea.create!(name: 'Academia - Vista Alegre',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 1)
-CommonArea.create!(name: 'Salão de Festa - Vista Alegre', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 1)
-CommonArea.create!(name: 'Salão de jogos - Vista Alegre', description: 'Jogos para toda família', max_occupancy: 20,
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 1)
-CommonArea.create!(name: 'Jardim Botânico Interno - Vista Alegre', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 1)
-CommonArea.create!(name: 'Playground - Vista Alegre', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 1)
 
 # Rio de Janeiro
-CommonArea.create!(name: 'Piscina - Monte Belo', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
                    rules: 'Não pode comer na área da piscina', condo_id: 2)
-CommonArea.create!(name: 'Academia - Monte Belo',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 2)
-CommonArea.create!(name: 'Salão de Festa - Monte Belo', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 2)
-CommonArea.create!(name: 'Salão de jogos - Monte Belo', description: 'Jogos para toda família', max_occupancy: 20,
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 2)
-CommonArea.create!(name: 'Jardim Botânico Interno - Monte Belo', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 2)
-CommonArea.create!(name: 'Playground - Monte Belo', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 2)
 
 # Minas Gerais
-CommonArea.create!(name: 'Piscina - Parque Verde', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
                    rules: 'Não pode comer na área da piscina', condo_id: 3)
-CommonArea.create!(name: 'Academia - Parque Verde',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 3)
-CommonArea.create!(name: 'Salão de Festa - Parque Verde', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 3)
-CommonArea.create!(name: 'Salão de jogos - Parque Verde', description: 'Jogos para toda família', max_occupancy: 20,
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 3)
-CommonArea.create!(name: 'Jardim Botânico Interno - Parque Verde', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 3)
-CommonArea.create!(name: 'Playground - Parque Verde', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 3)
 
 # Curitiba
-CommonArea.create!(name: 'Piscina - Jardim das Flores', description: 'Piscina grande cabe até golfinhos',
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos',
                    max_occupancy: 50, rules: 'Não pode comer na área da piscina', condo_id: 4)
-CommonArea.create!(name: 'Academia - Jardim das Flores',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 4)
-CommonArea.create!(name: 'Salão de Festa - Jardim das Flores', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 4)
-CommonArea.create!(name: 'Salão de jogos - Jardim das Flores', description: 'Jogos para toda família',
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família',
                    max_occupancy: 20, rules: 'Aberto para toda família', condo_id: 4)
-CommonArea.create!(name: 'Jardim Botânico Interno - Jardim das Flores', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 4)
-CommonArea.create!(name: 'Playground - Jardim das Flores', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 4)
 
 # Fortaleza
-CommonArea.create!(name: 'Piscina - Bosque Encantado', description: 'Piscina grande cabe até golfinhos',
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos',
                    max_occupancy: 50, rules: 'Não pode comer na área da piscina', condo_id: 8)
-CommonArea.create!(name: 'Academia - Bosque Encantado',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 8)
-CommonArea.create!(name: 'Salão de Festa - Bosque Encantado', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 8)
-CommonArea.create!(name: 'Salão de jogos - Bosque Encantado', description: 'Jogos para toda família', max_occupancy: 20,
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 8)
-CommonArea.create!(name: 'Jardim Botânico Interno - Bosque Encantado', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 8)
-CommonArea.create!(name: 'Playground - Bosque Encantado', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 8)
 
 # Campo Grande
-CommonArea.create!(name: 'Piscina - Bela Jardins', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
+CommonArea.create!(name: 'Piscina', description: 'Piscina grande cabe até golfinhos', max_occupancy: 50,
                    rules: 'Não pode comer na área da piscina', condo_id: 20)
-CommonArea.create!(name: 'Academia - Bela Jardins',
+CommonArea.create!(name: 'Academia',
                    description: 'Uma academia raíz com ventilador apenas para os marombas', max_occupancy: 20,
                    rules: 'Não pode ser frango', condo_id: 20)
-CommonArea.create!(name: 'Salão de Festa - Bela Jardins', description: 'Salão preparado para grandes festas',
+CommonArea.create!(name: 'Salão de Festa', description: 'Salão preparado para grandes festas',
                    max_occupancy: 80, rules: 'Som alto somente até as 22h', condo_id: 20)
-CommonArea.create!(name: 'Salão de jogos - Bela Jardins', description: 'Jogos para toda família', max_occupancy: 20,
+CommonArea.create!(name: 'Salão de jogos', description: 'Jogos para toda família', max_occupancy: 20,
                    rules: 'Aberto para toda família', condo_id: 20)
-CommonArea.create!(name: 'Jardim Botânico Interno - Bela Jardins', description: 'Hambiente relaxante',
+CommonArea.create!(name: 'Jardim Botânico Interno', description: 'Hambiente relaxante',
                    max_occupancy: 15, rules: 'Aberto para toda família', condo_id: 20)
-CommonArea.create!(name: 'Playground - Bela Jardins', description: 'Habiente para toda família',
+CommonArea.create!(name: 'Playground', description: 'Habiente para toda família',
                    max_occupancy: 20, rules: 'Aberto para todas as crianças', condo_id: 20)
 
 p "#{CommonArea.count} CommonArea created"
