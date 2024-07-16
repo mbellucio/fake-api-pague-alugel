@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_16_034607) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_16_220735) do
   create_table "common_areas", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_16_034607) do
     t.string "condo_name"
     t.string "owner_name"
     t.integer "property_owner_id", null: false
+    t.integer "condo_id"
     t.index ["property_owner_id"], name: "index_units_on_property_owner_id"
   end
 
