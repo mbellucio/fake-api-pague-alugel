@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :unit_types, only: %i[index show]
       resources :units, only: %i[index show]
       get 'property', to: 'property_owners#search'
+      get 'get_owner_properties', to: 'units#owner_properties'
     end
   end
 end

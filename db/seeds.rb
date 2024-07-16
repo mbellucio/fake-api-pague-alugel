@@ -1,6 +1,6 @@
 PropertyOwner.create!(document_number: '12312312301')
 PropertyOwner.create!(document_number: '12312312302')
-PropertyOwner.create!(document_number: '12312312303')
+property_owner = PropertyOwner.create!(document_number: '12312312303')
 
 Condo.create!(name: 'Residencial Vista Alegre', city: 'São Paulo')
 Condo.create!(name: 'Condomínio Monte Belo', city: 'Rio de Janeiro')
@@ -42,9 +42,12 @@ UnitType.create!(area: 4000, description: 'Apartamento de Ouro', ideal_fraction:
 
 p "#{UnitType.count} UnitType created"
 
-Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 1)
-Unit.create!(area: 200, floor: 1, number: 2, unit_type_id: 2)
-Unit.create!(area: 300, floor: 1, number: 3, unit_type_id: 3)
+Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 1, tenant_id: 1, owner_id: 1,
+             description: "Apartamento de Ferro", condo_name: "Residencial Estância Real", property_owner:, owner_name: 'Gian' )
+Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 2, tenant_id: 1, owner_id: 2,
+             description: "Apartamento de 2 Quartos", condo_name: "Edificios Centro Universitario Filadelfia", property_owner:, owner_name: 'Gian' )
+Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 3, tenant_id: nil, owner_id: 1,
+             description: "Apartamentinho", condo_name: "Residencial Sol Nascente", property_owner:, owner_name: 'Gian' )
 
 Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 4)
 Unit.create!(area: 200, floor: 2, number: 2, unit_type_id: 4)
