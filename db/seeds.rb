@@ -43,15 +43,15 @@ UnitType.create!(area: 4000, description: 'Apartamento de Ouro', ideal_fraction:
 p "#{UnitType.count} UnitType created"
 
 Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 1, tenant_id: 1, owner_id: 1, condo_id: 1,
-             description: "Apartamento de Ferro", condo_name: "Residencial Estância Real", property_owner:, owner_name: 'Gian' )
+             description: 'Apartamento de Ferro', condo_name: 'Residencial Estância Real', property_owner:, owner_name: 'Gian')
 Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 2, tenant_id: 1, owner_id: 2, condo_id: 1,
-             description: "Apartamento de 2 Quartos", condo_name: "Edificios Centro Universitario Filadelfia", property_owner:, owner_name: 'Gian' )
+             description: 'Apartamento de 2 Quartos', condo_name: 'Edificios Centro Universitario Filadelfia', property_owner:, owner_name: 'Gian')
 Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 3, tenant_id: nil, owner_id: 1, condo_id: 1,
-             description: "Apartamentinho", condo_name: "Residencial Sol Nascente", property_owner:, owner_name: 'Gian' )
+             description: 'Apartamentinho', condo_name: 'Residencial Sol Nascente', property_owner:, owner_name: 'Gian')
 
-Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 4)
-Unit.create!(area: 200, floor: 2, number: 2, unit_type_id: 4)
-Unit.create!(area: 300, floor: 3, number: 3, unit_type_id: 4)
+Unit.create!(area: 100, floor: 1, number: 1, unit_type_id: 4, property_owner:)
+Unit.create!(area: 200, floor: 2, number: 2, unit_type_id: 4, property_owner:)
+Unit.create!(area: 300, floor: 3, number: 3, unit_type_id: 4, property_owner:)
 
 p "#{Unit.count} Unit created"
 
